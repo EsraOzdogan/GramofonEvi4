@@ -25,7 +25,7 @@
                     <td>
                       <button type="button" class="buton " >
                             <span>
-                              <router-link to="/sepetcikar"></router-link>   <!-- sepet çıkar sayfasına gidiş-->
+                            <router-link to="/sepetcikar"></router-link> 
                               <i class="icons-office-52"> </i>
                             </span>
                       </button>

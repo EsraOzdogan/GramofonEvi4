@@ -1,8 +1,11 @@
 <template>
   <div class="wrapper">
+
+
     <div class="slider1">
       <img src="../components/img/img1.jpeg" alt="">
     </div>
+
     <div class="tablo">
       <div class="tablo-kutu">
         <h2 class="tablo-başlık">GUVENLI ALISVERIS</h2>
@@ -40,7 +43,10 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="4"></li>
+
           </ol>
+
+
           <div class="carousel-inner">
 
             <div class="item active">
@@ -126,7 +132,8 @@
             <div class="grid">
               <h2 class="grid-başlık"><span>Yardım</span></h2>
               <div class="grid-kutu">
-                <span><a class="" href="#">Güvenli Alışveriş</a><a class="" href="#">Sıkça Sorulan Sorular</a><a class="" href="hesap-numaralari">Hesap Numaraları</a></span>
+                <span><a class="" href="#">Güvenli Alışveriş</a>
+                <router-link to="/sss">SSS</router-link><a class="" href="hesap-numaralari">Hesap Numaraları</a></span>
               </div>
             </div>
 
@@ -191,7 +198,16 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
   </div>
+
+
 </template>
 
 <script>

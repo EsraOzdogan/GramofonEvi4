@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
+    <div class="container">
+      <div class="row">
     <div class="geridönüs">  <!--anasayfa ve pikapiğnesi sayfasına gidiş-->
-      <div class="container">
+
         <div  class="geridönüs-ic">
           <a><a><router-link to="/">Ana Sayfa</router-link></a>  <!--anasayfaya gidiş-->
           </a><span> &nbsp; &gt; &nbsp; </span><a><a><router-link to="/PikapIgneleri">PİKAP İĞNESİ -AKS</router-link></a></a>	  <!--eski sayfalara dönüş linkleri-->  <!--pikapiğnesi sayfasına gidiş-->
@@ -14,15 +16,10 @@
           <div class="carousel"   >
 
             <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-
-
-
               <div class="carousel-inner" >
-
                 <div class="item active" >
                   <img src="../components/img/imgf.jpg"  >
                 </div>
-
                 <div class="item">
                   <img src="../components/img/img12.jpg" >
                 </div>
@@ -95,7 +92,9 @@
         </div>
       </div>
     </div>
-  </div>
+      </div>
+    </div>
+
 </template>
 
 <script>
@@ -149,6 +148,7 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: inherit;
   }
   .geridönüs-ic {
     color: #a87a62;

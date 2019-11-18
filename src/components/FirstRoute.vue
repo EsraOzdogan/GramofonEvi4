@@ -50,12 +50,16 @@
                 <label class="kontrolkenar kontroltuş">Parola</label>
                 <div class="labelkontrol ikon">  <!-- üye kayıt formundaki parola ikon-->
                   <input type="password"  class="kontrolform " placeholder="Parolanızı giriniz." >
+
                 </div>
               </div>
+
               <div class="butonsağ">
                 <button class="buton" >KAYIT OL</button>
               </div>
+
             </form>
+
           </div>
         </div>
       </div>

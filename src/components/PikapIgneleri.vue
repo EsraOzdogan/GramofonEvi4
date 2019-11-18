@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <div class="container"><!--anasayfa ve pikapiğnesi sayfasına gidiş-->
+    <div class="row">
       <div class="geridönüs-ic">
         <a><router-link to="/">Ana Sayfa</router-link></a>  <!--eski sayfalara dönüş linkleri-->
         <span> &nbsp; &gt; &nbsp;</span>
@@ -8,7 +9,7 @@
       </div>
     </div>
     <div class="Urun">
-      <div class="container"><!--ürün adet ve filtre-->
+      <div class=""><!--ürün adet ve filtre-->
         <h1>PİKAP İĞNESİ -AKS</h1>
         <div>
           <div class="ürünsayi">
@@ -33,10 +34,9 @@
             <div class="ürün-grid">  <!--ürünler-->
               <div class="ürün">
                 <div class="ürün-resim">  <!--ürün resmi-->
-                  <a>
+                
+                  <a>         
                     <a><router-link to="/PikapIgnesiVeKristali"> <img src="../components/img/img12.jpg" alt=""></router-link></a> <!--ürün sayfasına gidiş-->
-
-
                   </a>
                 </div>
                 <div class="ürün-aciklama">   <!--ürün açıklama kısmı-->
@@ -659,7 +659,7 @@
       </div>
     </div>
 
-
+    </div>
   </div>
 
 </template>
@@ -676,10 +676,12 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: inherit;
   }
   .geridönüs-ic {   /*geridönüş anasayfa ve pikapsayfasına döniş kısmının yazı rengi ve kenarlardan boşluğu*/
     color: black;
     padding: 20px 0;
+
   }
   .geridönüs-ic a {  /*geridönüş anasayfa ve pikapsayfasının yazı rengi stiili ve kenar boşluğu*/
     font-family: "century";

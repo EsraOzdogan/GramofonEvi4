@@ -5,14 +5,14 @@
       <div class="header-üst">
         <div class="menü-sol">
           <ul>
-            <li class=" "><a class="" href="#">ILETISIM</a></li>
-            <li class=" "><a class="" href="#">ILETISIM</a></li>
+            <li class=" "><router-link to="/Hakkımızda">{{message}}</router-link></li>
+            <li class=" "><router-link to="/İletişim">İLETİŞİM</router-link></li>
           </ul>
         </div>
         <div class="menü-sağ">
           <ul>
-            <li><router-link to="/Giris">ÜYE GİRİŞİ</router-link></li>
-            <li><router-link to="/FirstRoute">YENİ ÜYE</router-link></li>
+           <li><router-link to="/Giris">ÜYE GİRİŞİ</router-link></li>
+            <li><router-link to="/firstRoute">YENİ ÜYE</router-link></li>
           </ul>
         </div>
       </div>
@@ -22,12 +22,16 @@
          <router-link to="/"><img src="../components/img/logo.png"></router-link>
 
         </div>
-        <div class="arama-alanı">
+     
+
+          <div class="arama-alanı">
           <form class="arama-kutusu" action="index.html" method="post">
             <input type="text" placeholder="Urunlerde ara..." name="" value="">
             <button type="button" name="button"><img src="../components/img/search.png" /></button>
           </form>
         </div>
+
+
         <div id="kart">
           <img src="../components/img/cart.png" alt="" />
           <a href="#">
@@ -129,25 +133,26 @@
       </div>
     </div>
   </div>
-
-
-
-
 </template>
 
 <script>
-  export default {
-    name: 'Home',
-    props: {
-      message: String
-
-    }
+export default {
+  name: 'Home',
+  props: {
+    message: String
   }
-
+}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+button {
+    font-size: 1.25rem;
+    border-radius: 3%;
+    background-color: #f63954;
+    border-color: #f63954;
+    color: #fff;
+    font-weight: 500;
+}
   .wrapper{
 
     width: 1170px;
@@ -205,6 +210,7 @@
     padding: 3px;
     position: relative;
   }
+
   .arama-kutusu button{
     position: absolute;
     right: 10px;
@@ -400,5 +406,31 @@
   .mobile-menu-area {
     background: none;
   }
+  .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
 </style>
 

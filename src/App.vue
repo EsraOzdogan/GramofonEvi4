@@ -1,35 +1,41 @@
 <template>
   <div id="app">
-    <Home message="HAKKIMIZDA" />
+    <Home message="HAKKIMIZDA"/>
     <router-view></router-view>
     <br/><br/><hr/>
     <br/><br/><hr/>
     <br/><br/><hr/>
     <br/><br/><hr/>
-    <scrollUp/>
+    <br/><br/><hr/>
+    <br/><br/><hr/>
+    <br/><br/><hr/>
+    <br/><br/><hr/>
+    <br/><br/><hr/>
+
     <footerbuton/>
+    <scrollUp/>
   </div>
 </template>
 
 <script>
-  import scrollUp from './components/scrollUp.vue'
   import Home from './components/Home.vue'
-  import Footer from './components/Alt.vue'
-  import footerbuton from './components/footerbuton'
+  import scrollUp from './components/scrollUp.vue'
+  import footerbuton from './components/footerbuton.vue'
+  import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
   export default {
     name: 'app',
     components: {
       Home,
       scrollUp,
-      Footer,
       footerbuton
     }
   }
 </script>
 
 <style>
-  #app {
+ #app {
     background: url("components/img/general_bg_image.png") repeat;
     margin: 0;
     color: #333;

@@ -9,6 +9,9 @@ import PikapIgnesiVeKristali from '@/components/PikapIgnesiVeKristali'
 import SatınAlButon from '@/components/SatınAlButon'
 import SepetCikar from '@/components/SepetCikar'
 import fixedFooter from '@/components/fixedFooter'
+import HakkımızdaStepper from '@/components/HakkımızdaStepper'
+import Iletisim from '@/components/Iletisim'
+import SSS from '@/components/SSS'
 
 Vue.use(Router)
 
@@ -58,6 +61,21 @@ export default new Router({
       path: '/footer',
       name: 'footer',
       component: fixedFooter
+    },
+    {
+      path: '/Hakkımızda',
+      name: 'Hakkımızda',
+      component: HakkımızdaStepper
+    },
+    {
+      path: '/İletişim',
+      name: 'İletişim',
+      component: Iletisim
+    },
+    {
+      path: '/sss',
+      name: 'sss',
+      component: SSS
     }
   ]
 })
