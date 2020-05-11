@@ -2,7 +2,7 @@
   "name": "vue-routes-01",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Sebastian Eschweiler <sebastian.eschweiler@gmail.com>",
+  "author": "Esra Özdoğan",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
